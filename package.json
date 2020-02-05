@@ -1,0 +1,14 @@
+{
+  "name": "francescobarranca.com",
+  "version": "1.0.0",
+  "description": "Francesco's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Francesco Michele Barranca",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
