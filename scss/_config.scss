@@ -1,0 +1,8 @@
+$primary-color: #04f6ff;
+$secondary-color: #9f13dd;
+$text-color: #ffff78;
+
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+@mixin easeOut {
+  transition: all 1.2s ease-out;
+}
