@@ -1,24 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav {
-    float: none;
-    width: 100%;
-    min-height: 0;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-    ul.menu-nav.show {
-      transform: translate3d(0, 0, 0); } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -81,7 +61,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -150,3 +130,73 @@ main {
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #04f6ff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #9f13dd;
+      transition: all 1.2s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #9f13dd;
+    color: #ffff78; }
+
+.btn-dark {
+  background: #000404; }
+
+.btn-light {
+  background: white;
+  color: #9f13dd; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #00c9d0;
+  color: #ffff78;
+  height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+    ul.menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
