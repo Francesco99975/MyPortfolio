@@ -162,6 +162,31 @@ main {
   }
 }
 
+.contact-links {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  .contacts {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li,
+    a {
+      font-size: 2rem;
+      color: $text-color;
+
+      &:hover {
+        color: $primary-color;
+        @include easeOut;
+      }
+    }
+  }
+}
+
 .skills {
   display: grid;
   grid-gap: 20px;

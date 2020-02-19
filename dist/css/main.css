@@ -146,6 +146,25 @@ main {
       border-color: #9f13dd;
       transition: all 1.2s ease-out; }
 
+.contact-links {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  align-items: center; }
+  .contact-links .contacts {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .contact-links .contacts li,
+    .contact-links .contacts a {
+      font-size: 2rem;
+      color: #ffff78; }
+      .contact-links .contacts li:hover,
+      .contact-links .contacts a:hover {
+        color: #04f6ff;
+        transition: all 1.2s ease-out; }
+
 .skills {
   display: grid;
   grid-gap: 20px;
