@@ -1,13 +1,15 @@
 //Wide Screens
 @include mediaXl {
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 //Desktop
 @include mediaLg {
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -36,7 +38,8 @@
     }
   }
 
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -47,7 +50,8 @@
     margin-top: 10vh;
   }
 
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: 1fr;
   }
 }

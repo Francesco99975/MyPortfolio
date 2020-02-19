@@ -162,6 +162,44 @@ main {
   }
 }
 
+.skills {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  .skill-cat {
+    background-color: #0e8d72bb;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+    .skill-title {
+      text-align: center;
+    }
+
+    .skill-list {
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem;
+
+      .skill {
+        color: $primary-color;
+        cursor: pointer;
+
+        img {
+          color: $primary-color;
+          width: 30px;
+        }
+
+        &:hover {
+          color: $text-color;
+          @include easeOut;
+        }
+      }
+    }
+  }
+}
+
 .btn {
   display: block;
   padding: 0.5rem 1rem;

@@ -146,6 +146,31 @@ main {
       border-color: #9f13dd;
       transition: all 1.2s ease-out; }
 
+.skills {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .skills .skill-cat {
+    background-color: #0e8d72bb;
+    border-radius: 5px;
+    margin-bottom: 2rem; }
+    .skills .skill-cat .skill-title {
+      text-align: center; }
+    .skills .skill-cat .skill-list {
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem; }
+      .skills .skill-cat .skill-list .skill {
+        color: #04f6ff;
+        cursor: pointer; }
+        .skills .skill-cat .skill-list .skill img {
+          color: #04f6ff;
+          width: 30px; }
+        .skills .skill-cat .skill-list .skill:hover {
+          color: #ffff78;
+          transition: all 1.2s ease-out; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -170,11 +195,13 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
@@ -192,11 +219,13 @@ main {
     font-size: 24px; }
     ul.menu-nav.show {
       transform: translate3d(0, 0, 0); }
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
-  .projects {
+  .projects,
+  .skills {
     grid-template-columns: 1fr; } }
