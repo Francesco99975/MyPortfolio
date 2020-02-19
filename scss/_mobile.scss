@@ -42,6 +42,10 @@
   .skills {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #mail {
+    font-size: 1.5rem;
+  }
 }
 
 //Smartphones
@@ -50,8 +54,16 @@
     margin-top: 10vh;
   }
 
+  #home h1 {
+    font-size: 2.3rem;
+  }
+
   .projects,
   .skills {
     grid-template-columns: 1fr;
+  }
+
+  #mail {
+    font-size: 0.9rem;
   }
 }

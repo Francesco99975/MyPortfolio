@@ -147,17 +147,14 @@ main {
       transition: all 1.2s ease-out; }
 
 .contact-links {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
-  align-items: center; }
+  text-align: center; }
   .contact-links .contacts {
-    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0; }
     .contact-links .contacts li,
     .contact-links .contacts a {
+      display: block;
       font-size: 2rem;
       color: #ffff78; }
       .contact-links .contacts li:hover,
@@ -240,11 +237,17 @@ main {
       transform: translate3d(0, 0, 0); }
   .projects,
   .skills {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #mail {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  #home h1 {
+    font-size: 2.3rem; }
   .projects,
   .skills {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #mail {
+    font-size: 0.9rem; } }

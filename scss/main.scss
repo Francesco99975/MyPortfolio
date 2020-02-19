@@ -163,19 +163,16 @@ main {
 }
 
 .contact-links {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
-  align-items: center;
+  text-align: center;
 
   .contacts {
-    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li,
     a {
+      display: block;
       font-size: 2rem;
       color: $text-color;
 
