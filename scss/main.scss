@@ -152,6 +152,7 @@ main {
 
   img {
     width: 100%;
+    height: 86.7%;
     border: 3px $primary-color solid;
 
     &:hover {
@@ -207,6 +208,7 @@ main {
       .skill {
         color: $primary-color;
         cursor: pointer;
+        padding: 6px;
 
         img {
           color: $primary-color;
